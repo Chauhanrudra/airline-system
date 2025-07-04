@@ -1,0 +1,91 @@
+# ========================
+# System & Editor Files
+# ========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.iml
+
+# IDE/Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.local
+.env*.backup
+.env.production
+.env.development
+.env.test
+secrets.json  # If you use a secrets file
+
+# ========================
+# Node.js/Express Backend
+# ========================
+node_modules/
+dist/          # Ignore compiled JS (if using TypeScript)
+npm-debug.log*
+yarn-error.log*
+yarn.lock      # Only ignore if using npm (or vice versa)
+package-lock.json # Only ignore if using yarn
+*.pid
+logs/          # Custom log directory (common in Express)
+
+# ========================
+# MongoDB Local Data
+# ========================
+/data/db/      # Local MongoDB storage
+*.ns
+*.0
+*.1
+mongod.log     # MongoDB log file
+
+# ========================
+# Flutter/Dart Frontend
+# ========================
+**/build/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+*.dart.js
+*.js.map
+*.info.json
+*.manifest
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# ========================
+# Android/iOS Specific
+# ========================
+# Android
+**/android/.gradle/
+**/android/app/build/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework/
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ========================
+# Testing & Coverage
+# ========================
+coverage/      # Coverage reports (Jest, Mocha, Flutter)
+test-report.xml
+*.lcov
